@@ -13,8 +13,8 @@ public class DoctorUserDetailsService implements UserDetailsService {
     private DoctorRepository doctorRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String username  ) throws UsernameNotFoundException {
-        Doctor doctor = doctorRepository.findByUsername(username).orElseThrow(()-> new UsernameNotFoundException("Doctor with that username does not exist."));
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Doctor doctor = doctorRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("Doctor with that username does not exist."));
 
         return User.builder()
                 .username(doctor.getUsername())
