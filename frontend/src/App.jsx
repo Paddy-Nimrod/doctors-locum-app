@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./Login";
+import Login from "./authentications/Login";
 import Dashboard from "./Dashboard";
 import DoctorAccount from "./DoctorAccount";
 
