@@ -47,7 +47,7 @@ function Sidebar() {
                     <ul className="menu-links">
                     
                         <li className="nav-link">
-                            <a href="#">
+                            <a href="#" className="active">
                                 <i className='bx bx-time-five icon'></i>
                                 <span className="text nav-text">Shifts</span>
                             </a>

@@ -254,12 +254,15 @@ body.dark .sidebar header .toggle {
   transition: var(--tran-04);
 }
 
-.sidebar li a:hover {
+.sidebar li a:hover,
+.sidebar li a.active {
   background: var(--primary-color);
 }
 
 .sidebar li a:hover .icon,
-.sidebar li a:hover .text {
+.sidebar li a:hover .text,
+.sidebar li a.active .icon,
+.sidebar li a.active .text {
   color: var(--sidebar-color);
 }
 

@@ -7,18 +7,15 @@ import 'boxicons/css/boxicons.min.css';
 
 function Sidebar() {
     useEffect(() => {
-        // Get the toggle button and sidebar element
         const toggleButton = document.querySelector(".toggle");
         const sidebar = document.querySelector(".sidebar");
 
-        // Add event listener for the toggle button
         const toggleSidebar = () => {
             sidebar.classList.toggle("close");
         };
 
         toggleButton.addEventListener("click", toggleSidebar);
-
-        // Cleanup event listener on component unmount
+        
         return () => {
             toggleButton.removeEventListener("click", toggleSidebar);
         };
@@ -47,7 +44,7 @@ function Sidebar() {
                     <ul className="menu-links">
 
                         <li className="nav-link">
-                            <a href="#">
+                            <a href="#"  className="active">
                                 <i className='bx bx-time-five icon'></i>
                                 <span className="text nav-text">Shifts</span>
                             </a>
@@ -110,7 +107,6 @@ function Sidebar() {
                     </li>
                 </div>
             </nav>
-
 
        </aside>
     )
