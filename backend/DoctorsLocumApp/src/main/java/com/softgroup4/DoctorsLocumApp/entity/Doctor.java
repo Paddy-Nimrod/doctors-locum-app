@@ -3,7 +3,6 @@ package com.softgroup4.DoctorsLocumApp.entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.Set;
 
 @Entity
