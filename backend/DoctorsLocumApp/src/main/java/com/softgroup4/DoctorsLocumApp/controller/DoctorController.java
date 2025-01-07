@@ -79,7 +79,7 @@ public class DoctorController {
         return ResponseEntity.ok(doctor);
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Map<String, Object>> createDoctor(@RequestBody Map<String, Object> doctorRequest) {
         String type = (String) doctorRequest.get("type");
         Doctor doctor;
@@ -111,6 +111,7 @@ public class DoctorController {
 
         return ResponseEntity.ok(response);
     }
+
     // Response after instance of Doctor is saved.
     private static Map<String, Object> getResponse(Doctor savedDoctor) {
         Map<String, Object> response = new HashMap<>();
